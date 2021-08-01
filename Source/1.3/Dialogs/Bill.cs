@@ -454,25 +454,7 @@ namespace aRandomKiwi.MFM
                 Widgets.Label(new Rect(400f, 600f, 800f, 30f), "MFM_QuadBillTotal".Translate(total));
 
             GUI.color = Color.green;
-            bool mapHasEnoughtSilver = false;
-            if(Utils.modernUSFM())
-                mapHasEnoughtSilver = TradeUtility.ColonyHasEnoughSilver(backMapStuffAndGuarantee, Math.Abs(total));
-            else
-            {
-                if(caravanOverSOP != null)
-                {
-                    if (Utils.moneyInCaravan(caravanOverSOP) >= Math.Abs(total))
-                        mapHasEnoughtSilver = true;
-                }
-                else
-                {
-                    if (total >= 0)
-                        mapHasEnoughtSilver = true;
-                }
-            }
-                
-            if (total < 0 && !mapHasEnoughtSilver)
-                GUI.color = Color.gray;
+            
 
             if (summarize)
             {
@@ -487,6 +469,26 @@ namespace aRandomKiwi.MFM
             {
                 if (Widgets.ButtonText(new Rect(0f, 630f, 395f, 30f), "OK".Translate()))
                 {
+                    bool mapHasEnoughtSilver = false;
+                    if (Utils.modernUSFM())
+                        mapHasEnoughtSilver = TradeUtility.ColonyHasEnoughSilver(backMapStuffAndGuarantee, Math.Abs(total));
+                    else
+                    {
+                        if (caravanOverSOP != null)
+                        {
+                            if (Utils.moneyInCaravan(caravanOverSOP) >= Math.Abs(total))
+                                mapHasEnoughtSilver = true;
+                        }
+                        else
+                        {
+                            if (total >= 0)
+                                mapHasEnoughtSilver = true;
+                        }
+                    }
+
+                    if (total < 0 && !mapHasEnoughtSilver)
+                        GUI.color = Color.gray;
+
                     //If the player has enough money in one of his colonies
                     if (total >= 0 || mapHasEnoughtSilver)
                     {

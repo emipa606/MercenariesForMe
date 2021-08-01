@@ -310,34 +310,7 @@ namespace aRandomKiwi.MFM
 
             int toPay = salary - salaryNonConsumed - recallCost - shipCost;
 
-            bool mapHasEnoughtSilver = false;
-
-            if (toPay < 0)
-            {
-                //medieval mode
-                if (caravan != null)
-                {
-                    int sum = Utils.moneyInCaravan(caravan);
-
-                    if (sum >= toPay)
-                        mapHasEnoughtSilver = true;
-                }
-                else
-                {
-                    if (Utils.modernUSFM())
-                    {
-                        if(map != null)
-                            mapHasEnoughtSilver = TradeUtility.ColonyHasEnoughSilver(map, Math.Abs(toPay));
-                    }
-                    else
-                    {
-                        if (map != null && trader != null)
-                            mapHasEnoughtSilver = Utils.ColonyHasEnoughLocalSilver(map, Math.Abs(toPay));
-                    }
-                }
-            }
-            else
-                mapHasEnoughtSilver = true;
+       
 
             if (wanted.Count != 0 || recall.Count != 0)
             {
@@ -364,6 +337,35 @@ namespace aRandomKiwi.MFM
                 GUI.color = Color.green;
             if (Widgets.ButtonText(new Rect(0f, 630f, 390f, 30f), "OK".Translate()))
             {
+                bool mapHasEnoughtSilver = false;
+
+                if (toPay < 0)
+                {
+                    //medieval mode
+                    if (caravan != null)
+                    {
+                        int sum = Utils.moneyInCaravan(caravan);
+
+                        if (sum >= toPay)
+                            mapHasEnoughtSilver = true;
+                    }
+                    else
+                    {
+                        if (Utils.modernUSFM())
+                        {
+                            if (map != null)
+                                mapHasEnoughtSilver = TradeUtility.ColonyHasEnoughSilver(map, Math.Abs(toPay));
+                        }
+                        else
+                        {
+                            if (map != null && trader != null)
+                                mapHasEnoughtSilver = Utils.ColonyHasEnoughLocalSilver(map, Math.Abs(toPay));
+                        }
+                    }
+                }
+                else
+                    mapHasEnoughtSilver = true;
+
                 if ((wanted.Count != 0 || recall.Count != 0) && !thereAreInvalidData() && mapHasEnoughtSilver)
                 {
                     //Ordering the player's mercenary rental

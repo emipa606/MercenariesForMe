@@ -4,6 +4,7 @@ using RimWorld;
 using UnityEngine;
 using System.Collections.Generic;
 using RimWorld.Planet;
+using System.Linq;
 
 namespace aRandomKiwi.MFM
 {
@@ -20,6 +21,7 @@ namespace aRandomKiwi.MFM
         public Pawn actor;
         public ITrader trader;
         public Caravan caravan;
+        private int money = 0;
 
         public Vector2 scrollPosition = Vector2.zero;
 
@@ -29,6 +31,12 @@ namespace aRandomKiwi.MFM
             {
                 return new Vector2(820f, 700f);
             }
+        }
+
+        public override void PostOpen()
+        {
+            base.PostOpen();
+            CacheMoney();
         }
 
         public CentralHubHire(Pawn actor, Map map, Caravan caravan, ITrader trader = null)
@@ -382,27 +390,7 @@ namespace aRandomKiwi.MFM
 
             bool mapHasEnoughtSilver = false;
 
-            //Mode medieval
-            if ( caravan != null)
-            {
-                int sum = Utils.moneyInCaravan(caravan);
-                
-                if (sum >= immediateCost)
-                    mapHasEnoughtSilver = true;
-            }
-            else
-            {
-                if (Utils.modernUSFM())
-                {
-                    if (selMap != null)
-                        mapHasEnoughtSilver = TradeUtility.ColonyHasEnoughSilver(selMap, Math.Abs(immediateCost));
-                }
-                else
-                {
-                    if(selMap != null && trader != null)
-                        mapHasEnoughtSilver = Utils.ColonyHasEnoughLocalSilver(selMap, Math.Abs(immediateCost));
-                }
-            }
+            mapHasEnoughtSilver = money >= Math.Abs(immediateCost);
 
             if ( nbMerc == 0 || (immediateCost > 0 && !mapHasEnoughtSilver))
                 GUI.color = Color.gray;
@@ -500,5 +488,34 @@ namespace aRandomKiwi.MFM
                 Find.WindowStack.Add(floatMenuMap);
             }
         }
+
+        private void CacheMoney()
+        {
+            if (this.caravan != null)
+            {
+                money = Utils.moneyInCaravan(this.caravan);
+            }
+            else
+            {
+                if (Utils.modernUSFM())
+                {
+                    bool flag60 = this.selMap != null;
+                    if (flag60)
+                    {
+                        money = (from el in TradeUtility.AllLaunchableThingsForTrade(this.selMap, null) where el.def == ThingDefOf.Silver select el).Sum((Thing t) => t.stackCount);
+                    }
+                }
+                else
+                {
+                    if (this.selMap != null && this.trader != null)
+                    {
+                        money = (from t in Utils.AllLocalSilverForTrade(map)
+                                 where t.def == ThingDefOf.Silver
+                                 select t).Sum((Thing t) => t.stackCount);
+                    }
+                }
+            }
+        }
+       
     }
 }
