@@ -96,6 +96,15 @@ namespace aRandomKiwi.MFM
                 SkillRecord melee;
                 SkillRecord shoot;
 
+                //Reset child/adult hood
+                Backstory bs = null;
+                BackstoryDatabase.TryGetWithIdentifier("MercenaryRecruit18", out bs);
+                merc.story.adulthood = bs;
+                BackstoryDatabase.TryGetWithIdentifier("Mercenary55", out bs);
+                merc.story.childhood = bs;
+
+                Utils.ResetCachedIncapableOf(merc);
+
                 //Log.Message("=>" + merc.def.defName);
                 melee = Utils.getAssociatedSkill(merc, MercenaryType.Melee);
                 shoot = Utils.getAssociatedSkill(merc, MercenaryType.Ranged);

@@ -285,17 +285,29 @@ namespace aRandomKiwi.MFM
                 pawnKindDef = DefDatabase<PawnKindDef>.GetNamed(defNameRace);
             }
 
-            //We randomly draw a pawnkindDef for the mercenary
-            if (defNameRace == null || pawnKindDef == null)
+            //We randomly draw a pawnkindDef for the mercenary 
+            try
             {
-                pawnKindDef = (from d in DefDatabase<PawnKindDef>.AllDefs
-                                           where d.race != null && d.RaceProps.Humanlike
-                                           && !Settings.blacklistedPawnKind.Contains(d.defName)
-                                           select d).RandomElement<PawnKindDef>();
+                if (defNameRace == null || pawnKindDef == null)
+                {
+                    pawnKindDef = (from d in DefDatabase<PawnKindDef>.AllDefs
+                                   where d != null && d.race != null && d.RaceProps != null && d.RaceProps.Humanlike
+                                   && !Settings.blacklistedPawnKind.Contains(d.defName)
+                                   select d).RandomElement<PawnKindDef>();
+                }
+            }
+            catch (Exception)
+            {
+
             }
 
+            if (pawnKindDef == null)
+                pawnKindDef = PawnKindDefOf.AncientSoldier;
+
             //Pawn p = PawnGenerator.GeneratePawn(pawnKindDef, Faction.OfPlayer);
-            Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKindDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false));
+            Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKindDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 1f, 1f, null));
+            //prevent royal titles
+            p.royalty = null;
 
             int cAge = (int)(p.ageTracker.AgeChronologicalTicks / 3600000f);
             if (cAge < Settings.minAge || cAge >= Settings.maxAge)
@@ -343,10 +355,13 @@ namespace aRandomKiwi.MFM
             p.health.immunity = new ImmunityHandler(p);
 
             //Removal of serious hediffs (bads back, cataracts, ...)
-            foreach (var h in p.health.hediffSet.GetHediffs<HediffWithComps>().ToList())
+            if (Settings.hediffToNotClear != null && p.health.hediffSet != null)
             {
-                if(!Settings.hediffToNotClear.Contains(h.def.defName))
-                    p.health.hediffSet.hediffs.Remove(h);
+                foreach (var h in p.health.hediffSet.GetHediffs<HediffWithComps>().ToList())
+                {
+                    if (!Settings.hediffToNotClear.Contains(h.def.defName))
+                        p.health.hediffSet.hediffs.Remove(h);
+                }
             }
 
 
@@ -554,9 +569,13 @@ namespace aRandomKiwi.MFM
             }
 
             Backstory bs = null;
-            BackstoryDatabase.TryGetWithIdentifier("Mercenary", out bs);
+            BackstoryDatabase.TryGetWithIdentifier("MercenaryRecruit18", out bs);
             //Definition of adulthood as mercenary
             p.story.adulthood = bs;
+
+            //For childhood as mercenary to prevent issues
+            BackstoryDatabase.TryGetWithIdentifier("Mercenary55", out bs);
+            p.story.childhood = bs;
 
             //If childhood disable the function concerned or shoot and mixed then it is changed by a generic
             SkillRecord skill = getAssociatedSkill(p, type);
@@ -582,8 +601,6 @@ namespace aRandomKiwi.MFM
                 || p.story.childhood.workDisables.OverlapsWithOnAnyWorkType(WorkTags.Cleaning)
                 || p.story.childhood.workDisables.OverlapsWithOnAnyWorkType(WorkTags.Hauling))
             {
-                BackstoryDatabase.TryGetWithIdentifier("MercenaryRecruit", out bs);
-                p.story.childhood = bs;
                 if (condMH)
                 {
                     foreach(var trait in Settings.mustHaveTraits)
