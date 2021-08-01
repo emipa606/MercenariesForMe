@@ -126,7 +126,7 @@ namespace aRandomKiwi.MFM
                             removeSOP();
                             Find.LetterStack.RemoveLetter(this);
 
-                            Find.LetterStack.ReceiveLetter("MFM_LetterMercSalaryIncreaseRejected".Translate(), "MFM_LetterMercSalaryIncreaseRejectedDesc".Translate(0,faction.Name), LetterDefOf.ThreatBig);
+                            Find.LetterStack.ReceiveLetter("MFM_LetterMercSalaryIncreaseRejected".Translate(), "MFM_LetterMercSalaryIncreaseRejectedDesc".Translate(rogueMercs.Count,faction.Name), LetterDefOf.ThreatBig);
                         }
                     };
                     reject.resolveTree = true;
