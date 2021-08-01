@@ -306,7 +306,10 @@ namespace aRandomKiwi.MFM
 
             //Pawn p = PawnGenerator.GeneratePawn(pawnKindDef, Faction.OfPlayer);
             PawnGenerationRequest pgr = new PawnGenerationRequest(pawnKindDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 1f, 1f, null);
-
+            //prevent royalty titles
+            pgr.ForbidAnyTitle = true;
+            //prevent ideo for mercenaries
+            pgr.ForceNoIdeo = true;
             
             Pawn p = PawnGenerator.GeneratePawn(pgr);
 
