@@ -2182,7 +2182,7 @@ namespace aRandomKiwi.MFM
                 if (microElecResearchDef == null)
                     microElecResearchDef = DefDatabase<ResearchProjectDef>.GetNamed("MicroelectronicsBasics");
 
-                if (microElecResearchDef.IsFinished)
+                if (microElecResearchDef != null && microElecResearchDef.IsFinished)
                     return true;
                 else
                     return false;

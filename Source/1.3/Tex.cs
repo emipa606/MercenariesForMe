@@ -79,5 +79,7 @@ namespace aRandomKiwi.MFM
         public static readonly Texture2D medievalRestitutionOfPrisoners = ContentFinder<Texture2D>.Get("UI/BannerMedieval/RestitutionOfPrisoners", true);
 
         public static readonly Texture2D update = ContentFinder<Texture2D>.Get("UI/MFM_Update", true);
+
+        public static readonly Texture2D USFMFactionTex = ContentFinder<Texture2D>.Get("World/USFMR", true);
     }
 }

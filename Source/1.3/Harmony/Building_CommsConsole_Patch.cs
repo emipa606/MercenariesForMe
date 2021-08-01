@@ -5,6 +5,7 @@ using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 namespace aRandomKiwi.MFM
 {
@@ -27,7 +28,7 @@ namespace aRandomKiwi.MFM
                         PlayerKnowledgeDatabase.KnowledgeDemonstrated(ConceptDefOf.OpeningComms, KnowledgeAmount.Total);
 
                         //__instance.GiveUseCommsJob(myPawn, Utils.commUSFM);
-                    }, MenuOptionPriority.InitiateSocial, null, null, 0f, null, null), myPawn, __instance, "ReservedBy");
+                    }, Tex.USFMFactionTex, Color.red), myPawn, __instance, "ReservedBy");
 
                     //Add dialog menu allowing to insult the interlocutor just before the finish button
                     __result = __result.AddItem(opt);

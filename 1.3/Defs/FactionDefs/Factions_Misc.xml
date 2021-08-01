@@ -34,6 +34,7 @@
     </colorSpectrum>
 	<fixedName>United Space Force Mercenaries</fixedName>
 	<techLevel>Spacer</techLevel>
+	<factionIconPath>World/USFMR</factionIconPath>
   </FactionDef>
   
     <FactionDef>
