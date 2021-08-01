@@ -45,8 +45,14 @@ namespace aRandomKiwi.MFM
                 return false;
             }*/
             PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
+
             this.ResolveRaidStrategy(parms, combat);
             this.ResolveRaidArriveMode(parms);
+
+            //Prevent siege attack
+            if (parms.raidStrategy != null && parms.raidStrategy.defName == "Siege")
+                parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+
             if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
             {
                 return false;

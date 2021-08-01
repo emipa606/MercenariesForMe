@@ -305,9 +305,10 @@ namespace aRandomKiwi.MFM
                 pawnKindDef = PawnKindDefOf.AncientSoldier;
 
             //Pawn p = PawnGenerator.GeneratePawn(pawnKindDef, Faction.OfPlayer);
-            Pawn p = PawnGenerator.GeneratePawn(new PawnGenerationRequest(pawnKindDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 1f, 1f, null));
-            //prevent royal titles
-            p.royalty = null;
+            PawnGenerationRequest pgr = new PawnGenerationRequest(pawnKindDef, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, false, false, false, true, true, 1f, false, true, true, false, false, false, false, false, 1f, 1f, null);
+
+            
+            Pawn p = PawnGenerator.GeneratePawn(pgr);
 
             int cAge = (int)(p.ageTracker.AgeChronologicalTicks / 3600000f);
             if (cAge < Settings.minAge || cAge >= Settings.maxAge)
