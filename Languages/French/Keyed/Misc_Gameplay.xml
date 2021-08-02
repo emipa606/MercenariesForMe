@@ -187,13 +187,13 @@
 	<MFM_Confirmed>cadet</MFM_Confirmed>
 	<MFM_Veteran>vétéran</MFM_Veteran>
 	<MFM_Elite>élite</MFM_Elite>
-	<MFM_Cyborg>cyborg</MFM_Cyborg>
+	<MFM_Cyborg>commandant</MFM_Cyborg>
 	
 	<MFM_WantedRecruit>Recrue ({0}/{1})</MFM_WantedRecruit>
 	<MFM_WantedConfirmed>Cadet ({0}/{1})</MFM_WantedConfirmed>
 	<MFM_WantedVeteran>Vétéran ({0}/{1})</MFM_WantedVeteran>
 	<MFM_WantedElite>Elite ({0}/{1})</MFM_WantedElite>
-	<MFM_WantedCyborg>Cyborg ({0}/{1})</MFM_WantedCyborg>
+	<MFM_WantedCyborg>Commandant ({0}/{1})</MFM_WantedCyborg>
 	
 	
 	<MFM_Gear0>Pas d'armure (gratuit, Tshirt basique de l'USFM + simple pantalon)</MFM_Gear0>
@@ -298,13 +298,13 @@
 	<MFM_SettingsPriceConfirmed>Prix de bnase d'un soldat</MFM_SettingsPriceConfirmed>
 	<MFM_SettingsPriceVeteran>Prix de base d'un veteran</MFM_SettingsPriceVeteran>
 	<MFM_SettingsPriceElite>Prix de base d'un élite</MFM_SettingsPriceElite>
-	<MFM_SettingsPriceCyborg>Prix de base d'un cyborg</MFM_SettingsPriceCyborg>
+	<MFM_SettingsPriceCyborg>Prix de base d'un commandant</MFM_SettingsPriceCyborg>
 	
 	<MFM_SettingsGuaranteeRecruit>Caution recrue</MFM_SettingsGuaranteeRecruit>
 	<MFM_SettingsGuaranteeConfirmed>Caution soldat</MFM_SettingsGuaranteeConfirmed>
 	<MFM_SettingsGuaranteeVeteran>Caution vétéran</MFM_SettingsGuaranteeVeteran>
 	<MFM_SettingsGuaranteeElite>Caution élite</MFM_SettingsGuaranteeElite>
-	<MFM_SettingsGuaranteeCyborg>Caution cyborg</MFM_SettingsGuaranteeCyborg>
+	<MFM_SettingsGuaranteeCyborg>Caution commandant</MFM_SettingsGuaranteeCyborg>
 	
 	<MFM_SettingsMinRecruit>Minimum de recrue ({0})</MFM_SettingsMinRecruit>
 	<MFM_SettingsMaxRecruit>Maximum de recrue ({0})</MFM_SettingsMaxRecruit>
@@ -314,8 +314,8 @@
 	<MFM_SettingsMaxVeteran>Maximum de vétéran ({0})</MFM_SettingsMaxVeteran>
 	<MFM_SettingsMinElite>Minimum d'élite ({0})</MFM_SettingsMinElite>
 	<MFM_SettingsMaxElite>Maximum d'élite ({0})</MFM_SettingsMaxElite>
-	<MFM_SettingsMinCyborg>Minimum de cyborg ({0})</MFM_SettingsMinCyborg>
-	<MFM_SettingsMaxCyborg>Maximum de cyborg ({0})</MFM_SettingsMaxCyborg>
+	<MFM_SettingsMinCyborg>Minimum de commandant ({0})</MFM_SettingsMinCyborg>
+	<MFM_SettingsMaxCyborg>Maximum de commandant ({0})</MFM_SettingsMaxCyborg>
 	<MFM_SettingsTransportStandardMinHour>Livraison standard : minimum d'heures ({0}h)</MFM_SettingsTransportStandardMinHour>
 	<MFM_SettingsTransportStandardMaxHour>Livraison standard : maximum d'heures ({0}h)</MFM_SettingsTransportStandardMaxHour>
 	<MFM_SettingsTransportQuickMinHour>Livraison rapide : minimum d'heures ({0}h)</MFM_SettingsTransportQuickMinHour>
@@ -350,7 +350,7 @@
 	
 	<MFM_SettingsIncidentsCounterOffer>Contre-offre</MFM_SettingsIncidentsCounterOffer>
 	<MFM_SettingsIncidentsRaid>Raid de mercenaires</MFM_SettingsIncidentsRaid>
-	<MFM_SettingsCyborgBionicSource>Mod source des prothéses bioniques des mercenaires de classe Cyborg</MFM_SettingsCyborgBionicSource>
+	<MFM_SettingsCyborgBionicSource>Mod source des prothéses bioniques des mercenaires de classe Commandant</MFM_SettingsCyborgBionicSource>
 	<MFM_SettingsRiskRemovedCyborgPartExplode>Risque que le retrait d'un membre bionique appartenant à l'USFM provoque une explosion ({0}%)</MFM_SettingsRiskRemovedCyborgPartExplode>
 	<MFM_SettingsMinAge>Age minimum des mercenaires ({0})</MFM_SettingsMinAge>
 	<MFM_SettingsMaxAge>Age maximum des mercenaires ({0})</MFM_SettingsMaxAge>
