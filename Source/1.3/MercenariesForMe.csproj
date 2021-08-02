@@ -304,6 +304,7 @@
     <Compile Include="ChoiceLetter\ChoiceLetter_CounterOffer.cs" />
     <Compile Include="ChoiceLetter\ChoiceLetter_UnRemovable.cs" />
     <Compile Include="Comps\Comp_USFM.cs" />
+    <Compile Include="DefsOf\CWorkTypeDefOf.cs" />
     <Compile Include="Designators\Designator_BeamTarget.cs" />
     <Compile Include="Dialogs\RestitutionOfPrisoners.cs" />
     <Compile Include="Dialogs\TradeOrHireRent.cs" />

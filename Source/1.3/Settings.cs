@@ -8,6 +8,7 @@ namespace aRandomKiwi.MFM
 {
     public class Settings : ModSettings
     {
+        public static bool setBasicWorkTypeToOne = true;
         public static bool imprisonedMercenariesAreNoLongerMerc = true;
         public static string lastVersionInfo = "";
         public static bool allowNonZeroOtherSkillsMerc = false;
@@ -153,6 +154,7 @@ namespace aRandomKiwi.MFM
             list.GapLine();
 
 
+            list.CheckboxLabeled("MFM_SettingsSetBasicWorkTypeToOne".Translate(), ref setBasicWorkTypeToOne);
             list.CheckboxLabeled("MFM_SettingsImprisonedMercenariesAreNoLongerMerc".Translate(), ref imprisonedMercenariesAreNoLongerMerc);
 
             string buffMinXPRentedMercs = minXPRentedMercs.ToString();
@@ -896,6 +898,7 @@ namespace aRandomKiwi.MFM
             Scribe_Collections.Look<string>(ref blacklistedTraitsV2, "blacklistedTraitsV2", LookMode.Value);
             Scribe_Collections.Look<string>(ref hediffToNotClear, "hediffToNotClear", LookMode.Value);
             Scribe_Values.Look<bool>(ref imprisonedMercenariesAreNoLongerMerc, "imprisonedMercenariesAreNoLongerMerc", true);
+            Scribe_Values.Look<bool>(ref setBasicWorkTypeToOne, "setBasicWorkTypeToOne", true);
             
 
             if (blacklistedTraitsV2 == null)

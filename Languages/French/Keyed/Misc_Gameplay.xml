@@ -373,4 +373,5 @@
 	<MFM_SettingsBuyMercSalaryMultiplier>Multiplicateur de salaire à appliquer lorsque le joueur veux acheter les mercenaires (x{0})</MFM_SettingsBuyMercSalaryMultiplier>
 	<MFM_SettingsAllowMercNonZeroOtherSkills>Autoriser les mercenaires à avoir leurs autres skills pas à zéro (seront toujours inférieur au skill principal)</MFM_SettingsAllowMercNonZeroOtherSkills>
 	<MFM_SettingsImprisonedMercenariesAreNoLongerMerc>Les mercenaires arrêtés ne sont plus considérés comme mercenaire</MFM_SettingsImprisonedMercenariesAreNoLongerMerc>
+	<MFM_SettingsSetBasicWorkTypeToOne>Définir les prioritées de travail basique des mercenaires recrutés à 1 (pompier, patient, repos)</MFM_SettingsSetBasicWorkTypeToOne>
 </LanguageData>

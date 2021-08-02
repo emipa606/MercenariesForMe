@@ -454,61 +454,72 @@ namespace aRandomKiwi.MFM
                 switch (current.defName)
                 {
                     case "Doctor":
-                        if (type == MercenaryType.Medical)
+                        if (type == MercenaryType.Medical && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Warden":
-                        if (type == MercenaryType.Speaker)
+                        if (type == MercenaryType.Speaker && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Handling":
-                        if (type == MercenaryType.Trainer)
+                        if (type == MercenaryType.Trainer && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Cooking":
-                        if (type == MercenaryType.Cooker)
+                        if (type == MercenaryType.Cooker && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Hunting":
-                        if (type == MercenaryType.Ranged)
+                        if (type == MercenaryType.Ranged && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Construction":
-                        if (type == MercenaryType.Builder)
+                        if (type == MercenaryType.Builder && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Growing":
-                        if (type == MercenaryType.Farmer)
+                        if (type == MercenaryType.Farmer && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Mining":
-                        if (type == MercenaryType.Miner)
+                        if (type == MercenaryType.Miner && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "PlantCutting":
-                        if (type == MercenaryType.Farmer)
+                        if (type == MercenaryType.Farmer && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Smithing":
-                        if (type == MercenaryType.Tech)
+                        if (type == MercenaryType.Tech && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Tailoring":
-                        if (type == MercenaryType.Tech)
+                        if (type == MercenaryType.Tech && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Art":
-                        if (type == MercenaryType.Artist)
+                        if (type == MercenaryType.Artist && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Crafting":
-                        if (type == MercenaryType.Tech)
+                        if (type == MercenaryType.Tech && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
                     case "Research":
-                        if (type == MercenaryType.Scientist)
+                        if (type == MercenaryType.Scientist && !p.WorkTypeIsDisabled(current))
                             p.workSettings.SetPriority(current, 1);
                         break;
+                }
+
+                //Then set to 1 basic priorities (rest/firefight/patient)
+                if (Settings.setBasicWorkTypeToOne)
+                {
+                    if (!p.WorkTypeIsDisabled(CWorkTypeDefOf.Firefighter))
+                        p.workSettings.SetPriority(CWorkTypeDefOf.Firefighter, 1);
+                    if (!p.WorkTypeIsDisabled(CWorkTypeDefOf.Patient))
+                        p.workSettings.SetPriority(CWorkTypeDefOf.Patient, 1);
+                    if (!p.WorkTypeIsDisabled(CWorkTypeDefOf.PatientBedRest))
+                        p.workSettings.SetPriority(CWorkTypeDefOf.PatientBedRest, 1);
                 }
             }
         }

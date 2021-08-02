@@ -373,4 +373,5 @@
 	<MFM_SettingsBuyMercSalaryMultiplier>Multiplier of salary to apply when the player wants to buy the mercenaries (x{0})</MFM_SettingsBuyMercSalaryMultiplier>
 	<MFM_SettingsAllowMercNonZeroOtherSkills>Allow mercenaries to have their other skills not zero (will always be lower than the main skill)</MFM_SettingsAllowMercNonZeroOtherSkills>
 	<MFM_SettingsImprisonedMercenariesAreNoLongerMerc>Mercenaries arrested are no longer considered as mercenary</MFM_SettingsImprisonedMercenariesAreNoLongerMerc>
+	<MFM_SettingsSetBasicWorkTypeToOne>Set basic worktype priorities of hired mercenaries to 1 (Firefighter, patient, PatientBedRest)</MFM_SettingsSetBasicWorkTypeToOne>
 </LanguageData>
