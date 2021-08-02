@@ -36,6 +36,7 @@ namespace aRandomKiwi.MFM
                 //Prorated Mercenary XP increment
                 Comp_USFM comp = merc.TryGetComp<Comp_USFM>();
                 comp.prepareBringBackRentedMerc();
+                comp.rentedMercAdvanceBioAge();
 
                 //Mercenary return via droppod
                 Map map = Utils.getRandomMapOfPlayer();

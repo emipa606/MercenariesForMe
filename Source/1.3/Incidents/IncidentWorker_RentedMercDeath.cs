@@ -28,7 +28,12 @@ namespace aRandomKiwi.MFM
 
             if (Utils.modernUSFM())
             {
-                merc.TryGetComp<Comp_USFM>().killedDuringSrv = true;
+                Comp_USFM comp = merc.TryGetComp<Comp_USFM>();
+                if (comp != null)
+                {
+                    comp.killedDuringSrv = true;
+                    comp.rentedMercAdvanceBioAge();
+                }
                 List<Thing> toDeliver = new List<Thing>();
                 toDeliver.Add(merc);
 

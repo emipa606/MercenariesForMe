@@ -689,7 +689,13 @@ namespace aRandomKiwi.MFM
                     {
                         foreach(var m in mercs)
                         {
-                            listerRentedMercenaries.Remove(m);
+                            //Advance bio age if applicable
+                            Comp_USFM comp = m.TryGetComp<Comp_USFM>();
+                            if (comp != null)
+                                comp.rentedMercAdvanceBioAge();
+
+                            if (listerRentedMercenaries.Contains(m))
+                                listerRentedMercenaries.Remove(m);
                         }
 
                         //spawn effectif des mercenaires par dropPods

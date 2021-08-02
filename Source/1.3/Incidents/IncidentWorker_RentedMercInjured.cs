@@ -74,6 +74,7 @@ namespace aRandomKiwi.MFM
 
                 Comp_USFM comp = merc.TryGetComp<Comp_USFM>();
                 comp.prepareBringBackRentedMerc();
+                comp.rentedMercAdvanceBioAge();
 
             }
             catch(Exception)

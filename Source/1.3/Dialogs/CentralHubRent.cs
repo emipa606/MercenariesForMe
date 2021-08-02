@@ -368,12 +368,14 @@ namespace aRandomKiwi.MFM
 
                 if ((wanted.Count != 0 || recall.Count != 0) && !thereAreInvalidData() && mapHasEnoughtSilver)
                 {
+                    int CGT = Find.TickManager.TicksGame;
                     //Ordering the player's mercenary rental
                     foreach (var m in wanted)
                     {
                         Comp_USFM comp = m.Key.TryGetComp<Comp_USFM>();
                         comp.type = m.Value;
-
+                        //Allowing later to increase the pawn's bio age
+                        comp.startingRentGT = CGT;
                         Utils.setRentedMercSalary(m.Key);
 
                         //Starting date of the renting to calculate the prorated XP

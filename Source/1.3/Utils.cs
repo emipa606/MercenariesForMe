@@ -2518,7 +2518,7 @@ namespace aRandomKiwi.MFM
 
         public static bool isSS_Slave(Pawn pawn)
         {
-            return pawn.health.hediffSet.HasHediff(SS_slaveHediff, false);
+            return pawn.IsSlave || pawn.health.hediffSet.HasHediff(SS_slaveHediff, false);
         }
 
         public static void removeKeysStartingWith(Dictionary<string, int> data, string key)

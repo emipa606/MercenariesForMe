@@ -134,7 +134,10 @@ namespace aRandomKiwi.MFM
             Scribe_Values.Look<int>(ref this.quadNbHourMoodBad, "MFM_quadNbHourMoodBad", 0);
             Scribe_Collections.Look(ref origSkills, "MFM_origSkills", LookMode.Value);
             Scribe_Values.Look<float>(ref this.origScore, "MFM_origScore", 0.0f);
+            Scribe_Values.Look<int>(ref this.startingRentGT, "MFM_startingRentGT", -1);
             
+
+
 
             if (origSkills == null)
             {
@@ -524,6 +527,16 @@ namespace aRandomKiwi.MFM
             }
         }
 
+        public void rentedMercAdvanceBioAge()
+        {
+            Pawn cp = (Pawn)parent;
+            if (startingRentGT != -1 && cp.ageTracker != null)
+            {
+                cp.ageTracker.AgeBiologicalTicks += (Find.TickManager.TicksGame - startingRentGT);
+                startingRentGT = -1;
+            }
+        }
+
         /*
          * Operation precedent a hired mercenary return
          */
@@ -532,6 +545,7 @@ namespace aRandomKiwi.MFM
             
         }
 
+        public int startingRentGT = -1;
         public float slaveDecreaseIncome = 0.0f;
         public bool spawned = false;
         public bool hiredByPlayer = false;
