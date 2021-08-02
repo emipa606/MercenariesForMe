@@ -460,16 +460,22 @@ namespace aRandomKiwi.MFM
             GUI.color = Color.white;
         }
 
+        private List<ThingDef> racesAlreadyAdded = new List<ThingDef>();
+
         private void showRaceList()
         {
+            racesAlreadyAdded.Clear();
             List<FloatMenuOption> opts = new List<FloatMenuOption>();
 
             foreach (var pkd in DefDatabase<PawnKindDef>.AllDefs)
             {
-                if (pkd.race != null && pkd.RaceProps.Humanlike
-                                           && !Settings.blacklistedPawnKind.Contains(pkd.defName))
+                if (pkd.race != null 
+                    && !racesAlreadyAdded.Contains(pkd.race)
+                    && pkd.RaceProps.Humanlike
+                    && !Settings.blacklistedPawnKind.Contains(pkd.defName))
                 {
-                    opts.Add(new FloatMenuOption(pkd.LabelCap, delegate {
+                    racesAlreadyAdded.Add(pkd.race);
+                    opts.Add(new FloatMenuOption(pkd.race.LabelCap, delegate {
                         Utils.removeKeysStartingWith(wanted, "race_");
                         wanted["race_" + pkd.defName] = 1;
                         Utils.GCMFM.preferedRace = pkd.defName;

@@ -22,7 +22,7 @@ namespace aRandomKiwi.MFM
         public static bool allowNonViolentToBeRented = true;
         public static List<string> blacklistedWeapons = new List<string> { };
         public static List<string> hediffToNotClear = new List<string> { "DummyPrivates", "DummyPrivatesForModdedPawnsOnBirthday" };
-        public static List<string> blacklistedPawnKind = new List<string> { "M7MechPawn", "Android5Tier" };
+        public static List<string> blacklistedPawnKind = new List<string> { "M7MechPawn", "M8MechPawn", "Android5Tier" };
         public static int minXPRentedMercs = 600;
         public static int maxXPRentedMercs = 3000;
         public static int maxAge = 80;
