@@ -1715,6 +1715,11 @@ namespace aRandomKiwi.MFM
                 ret = false;
             }
 
+            if (pawn.Downed || (pawn.health != null && (pawn.health.summaryHealth.SummaryHealthPercent < 0.75f))) {
+                msg = "MFM_MsgCannotBeRentedAsMercBecauseBadHealth".Translate(pawn.LabelCap);
+                ret = false;
+             }
+
             return ret;
         }
 

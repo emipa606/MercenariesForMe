@@ -151,6 +151,7 @@
 	<MFM_LetterImprisonedMercPaymentDesc>Receipt of a payment of {0} silver from the {1} corresponding to the release of imprisoned mercenaries.</MFM_LetterImprisonedMercPaymentDesc>
 	
 	<!-- Messages -->
+	<MFM_MsgCannotBeRentedAsMercBecauseBadHealth>{0} cannot be rented as mercenary, either because he cannot walk (downed) or its state of health is not good enough for the service</MFM_MsgCannotBeRentedAsMercBecauseBadHealth>
 	<MFM_MsgPawnCannotBeRentedAsMerc>{0} cannot be rented as mercenary, either because he cannot fight either because he possesses a trait incompatible with this job (pyromaniac, nudist, etc..)</MFM_MsgPawnCannotBeRentedAsMerc>
 	<MFM_MsgPawnBeRentedAsMercInvalidType>{0} cannot do this job because he is incapable !</MFM_MsgPawnBeRentedAsMercInvalidType>
 	<MFM_MsgCannotBeRentedAsMercBecauseFired>{0} was fired by the {1} for his bad behavior, he can be rehired in {2}.</MFM_MsgCannotBeRentedAsMercBecauseFired>
