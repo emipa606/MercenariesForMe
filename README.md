@@ -8,7 +8,7 @@
     </a>
 	<img src="https://img.shields.io/github/downloads-pre/aRandomKiwi/Mercenaries-For-Me/total.svg?style=popout-square&color=green" alt="Github Total Downloads" />
 	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1832318107">
-		<img src="https://img.shields.io/badge/RimWorld-1.3-purple.svg?longCache=true&style=plastic)" alt="Compatible Rimworld 1.3" />
+		<img src="https://img.shields.io/badge/RimWorld-1.4-purple.svg?longCache=true&style=plastic)" alt="Compatible Rimworld 1.4" />
     </a>
 	<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1832318107">
 		<img src="https://img.shields.io/badge/documentation-%F0%9F%94%8D-blue?style=flat" />
