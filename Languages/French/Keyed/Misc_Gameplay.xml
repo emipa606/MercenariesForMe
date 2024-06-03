@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-	<MFM_ReturnPrisonedMercs>Mercenaires emprisonné</MFM_ReturnPrisonedMercs>
+	<MFM_ReturnPrisonedMercs>Mercenaires emprisonnés</MFM_ReturnPrisonedMercs>
 	<MFM_AddPrisonerMerc>Ajouter un mercenaire emprisonné</MFM_AddPrisonerMerc>
 	<MFM_RemovePrisonerMerc>Supprimer un prisonnier</MFM_RemovePrisonerMerc>
 	<MFM_HealthImpacted>( -{0}  santé dégradé )</MFM_HealthImpacted>
