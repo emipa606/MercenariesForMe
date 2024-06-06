@@ -18,7 +18,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\1.5\Assemblies\</OutputPath>
+    <OutputPath>C:\SteamLibrary\steamapps\common\RimWorld\Mods\MercenariesForMeContinued\1.5\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -337,6 +337,7 @@
     <Compile Include="Enum\Colors.cs" />
     <Compile Include="Enum\MercenaryType.cs" />
     <Compile Include="GC_MFM.cs" />
+    <Compile Include="HarmonyUtils.cs" />
     <Compile Include="Harmony\Building_CommsConsole_Patch.cs" />
     <Compile Include="Harmony\Dialog_Trade_Patch.cs" />
     <Compile Include="Harmony\InteractionWorker_RecruitAttempt_Patch.cs" />

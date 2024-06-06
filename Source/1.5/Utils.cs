@@ -2207,6 +2207,13 @@ namespace aRandomKiwi.MFM
         public static IntVec3 spawnMercOnMap(Map map, List<Pawn> toDeliver)
         {
             IntVec3 dropCellNear = default(IntVec3);
+
+            if (HarmonyUtils.IsSOS2SpaceMap(map))
+            {
+                Log.Warning("Failed to do traveler incident: Spawn prevented on Save Our Ship 2 space map.");
+                return dropCellNear;
+            }
+
             if (modernUSFM())
             {
                 //if(!RCellFinder.TryFindRandomPawnEntryCell(out dropCellNear, map, CellFinder.EdgeRoadChance_Hostile, false, null))
@@ -2253,6 +2260,13 @@ namespace aRandomKiwi.MFM
         public static bool spawnMedievalCaravan(Map map, List<Thing> thingsToSpawn, out IntVec3 spawnedThings)
         {
             spawnedThings = default(IntVec3);
+
+            if (HarmonyUtils.IsSOS2SpaceMap(map))
+            {
+                Log.Warning("Failed to do traveler incident: Spawn prevented on Save Our Ship 2 space map.");
+                return false;
+            }
+
             IntVec3 spawnCenter;
             Faction faction = Find.FactionManager.FirstFactionOfDef(DefDatabase<FactionDef>.GetNamed("USFM_FactionAOS"));
 
