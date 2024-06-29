@@ -63,10 +63,29 @@ namespace aRandomKiwi.MFM
                 buttonWidth = 390f;
             }
 
+            if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(Find.CurrentMap))
+            {
+                GUI.color = Color.green;
+                Widgets.ButtonText(new Rect(0f, 610f, 780f, 35f), "MFM_DialogUnavailableOnSOS2Rimnauts2Map".Translate());
+
+                GUI.color = Color.red;
+                string textBtnCancel;
+                if (Utils.modernUSFM())
+                    textBtnCancel = "Disconnect".Translate();
+                else
+                    textBtnCancel = "CancelButton".Translate();
+
+                if (Widgets.ButtonText(new Rect(0f, 645f, 780f, 35f), textBtnCancel))
+                {
+                    Find.WindowStack.TryRemove(this);
+                }
+                GUI.color = Color.white;
+                return;
+            }
             GUI.color = Color.green;
             if (Widgets.ButtonText(new Rect(0f, 610f, buttonWidth, 35f), "MFM_HireMerc".Translate()))
             {
-                Find.WindowStack.Add(new CentralHubHire(actor,map, caravan, trader));
+                Find.WindowStack.Add(new CentralHubHire(actor, map, caravan, trader));
             }
             if (Utils.modernUSFM() && Widgets.ButtonText(new Rect(buttonWidth, 610f, buttonWidth, 35f), "MFM_PowerBeam".Translate()))
             {

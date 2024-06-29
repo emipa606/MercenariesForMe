@@ -37,7 +37,7 @@ namespace aRandomKiwi.MFM
 
 
         public override void DoWindowContents(Rect inRect)
-        { 
+        {
             if (Widgets.ButtonText(new Rect(0f, 30f, 260f, 30f), "CaravanMeeting_Trade".Translate()))
             {
                 trade();

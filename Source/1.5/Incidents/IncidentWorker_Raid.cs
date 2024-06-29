@@ -24,6 +24,11 @@ namespace aRandomKiwi.MFM
                 return false;
 
             Map map = (Map)parms.target;
+            if(HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
+            {
+                Log.Warning("[MFM] Raid incident prevented on SOS2 or Rimnauts 2 map.");
+                return false;
+            }
             float initPoints = parms.points;
 
             //If in middle age mode we force the arrival by edge

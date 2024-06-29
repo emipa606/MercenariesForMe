@@ -20,6 +20,8 @@
 	<MFM_MedievalHireRent>雇傭/傭金</MFM_MedievalHireRent>
 	<MFM_MedievalHireRentDesc>從鐵意聯盟雇傭雇傭兵</MFM_MedievalHireRentDesc>
 	
+	<MFM_DialogUnavailableOnSOS2Rimnauts2Map>（禁用：SOS2和Rimnauts2太空中無法使用）</MFM_DialogUnavailableOnSOS2Rimnauts2Map>
+	
 	<MFM_GuardMode>防衛模式</MFM_GuardMode>
 	<MFM_GuardModeDesc>允許將殖民者與雇傭兵自動分配至防衛點進行防衛工作</MFM_GuardModeDesc>
 	

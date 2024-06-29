@@ -652,7 +652,7 @@ namespace aRandomKiwi.MFM
                         map = Find.CurrentMap;
 
                     //Patch avec SOS2: Si c'est une map spatiale SOS2, on prendra une autre --Par Ionfrigate12345:
-                    if(HarmonyUtils.IsSOS2SpaceMap(map))
+                    if(HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
                     {
                         map = HarmonyUtils.GetPlayerMainColonyMapSOS2Excluded();
                     }
@@ -893,7 +893,7 @@ namespace aRandomKiwi.MFM
             }
 
             //Patch avec SOS2: Si c'est une map spatiale SOS2, on prendra une autre --Par Ionfrigate12345:
-            if (HarmonyUtils.IsSOS2SpaceMap(map))
+            if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
             {
                 map = HarmonyUtils.GetPlayerMainColonyMapSOS2Excluded();
             }

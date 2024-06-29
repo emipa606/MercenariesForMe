@@ -25,6 +25,15 @@ namespace aRandomKiwi.MFM
             }
             return false;
         }
+        public static bool IsRimNauts2SpaceMap(Map map)
+        {
+            return map.Biome.defName.StartsWith("RimNauts2_");
+        }
+
+        public static bool IsSOS2OrRimNauts2SpaceMap(Map map)
+        {
+            return IsSOS2SpaceMap(map) || IsRimNauts2SpaceMap(map);
+        }
 
         public static Map GetPlayerMainColonyMapSOS2Excluded()
         {
@@ -35,7 +44,7 @@ namespace aRandomKiwi.MFM
             var allNonSpaceMaps = new List<Map>();
             foreach (var map in allPlayerHomes)
             {
-                if (IsSOS2SpaceMap(map) == false)
+                if (IsSOS2OrRimNauts2SpaceMap(map) == false)
                 {
                     allNonSpaceMaps.Add(map);
                 }

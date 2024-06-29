@@ -2210,7 +2210,7 @@ namespace aRandomKiwi.MFM
         {
             IntVec3 dropCellNear = default(IntVec3);
 
-            if (HarmonyUtils.IsSOS2SpaceMap(map))
+            if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
             {
                 Log.Warning("Failed to do traveler incident: Spawn prevented on Save Our Ship 2 space map.");
                 return dropCellNear;
@@ -2263,7 +2263,7 @@ namespace aRandomKiwi.MFM
         {
             spawnedThings = default(IntVec3);
 
-            if (HarmonyUtils.IsSOS2SpaceMap(map))
+            if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
             {
                 Log.Warning("Failed to do traveler incident: Spawn prevented on Save Our Ship 2 space map.");
                 return false;

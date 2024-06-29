@@ -38,7 +38,7 @@ namespace aRandomKiwi.MFM
                 Map map = Utils.getRandomMapOfPlayer();
 
 
-                if (Utils.modernUSFM())
+                if (Utils.modernUSFM() || HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
                 {
                     dropCellNear = DropCellFinder.TradeDropSpot(map);
 

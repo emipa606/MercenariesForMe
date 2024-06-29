@@ -40,7 +40,7 @@ namespace aRandomKiwi.MFM
             {
                 foreach(var map in Find.Maps)
                 {
-                    if(map.IsPlayerHome)
+                    if(map.IsPlayerHome && !HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
                         Utils.createSiteOfPayment(map);
                 }
             }
