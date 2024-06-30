@@ -204,6 +204,10 @@ namespace aRandomKiwi.MFM
 
                     foreach (var m in Find.Maps)
                     {
+                        if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(m))
+                        {
+                            continue;
+                        }
                         string mapText2 = m.GetUniqueLoadID();
                         if (m != backMap)
                         {

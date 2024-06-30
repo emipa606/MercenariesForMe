@@ -163,6 +163,10 @@ namespace aRandomKiwi.MFM
 
                 foreach(var m in Find.Maps)
                 {
+                    if(HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(m))
+                    {
+                        continue;
+                    }
                     if(m != map)
                         opts.Add(new FloatMenuOption(m.GetUniqueLoadID(), delegate { wanted["map"] = m.uniqueID; }, MenuOptionPriority.Default, null, null, 0f, null, null));
                 }

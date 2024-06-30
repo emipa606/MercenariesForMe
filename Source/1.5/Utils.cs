@@ -1452,7 +1452,8 @@ namespace aRandomKiwi.MFM
 
         public static Map getRandomMapOfPlayer()
         {
-            Map ret = null;
+            //Commenté par Ionfrigate pour update 1.5: Cette fonction n'est pas "Random", en plus elle n'exclut pas les map SOS2 / Rimnauts 2. J'utilise ma propre fonction à la place.
+            /*Map ret = null;
             foreach(var map in Find.Maps)
             {
                 if (map.IsPlayerHome)
@@ -1461,7 +1462,8 @@ namespace aRandomKiwi.MFM
                     break;
                 }
             }
-            return ret;
+            return ret;*/
+            return HarmonyUtils.GetPlayerMainColonyMapSOS2Excluded();
         }
 
         /*

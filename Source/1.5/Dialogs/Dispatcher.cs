@@ -94,6 +94,10 @@ namespace aRandomKiwi.MFM
                 string lib = "";
                 foreach (var m in Find.Maps)
                 {
+                    if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(m))
+                    {
+                        continue;
+                    }
                     if (m == Find.CurrentMap)
                         lib = "MFM_ThisCurrentMap".Translate(m.Parent.Label);
                     else
