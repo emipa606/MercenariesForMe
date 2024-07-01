@@ -44,7 +44,7 @@ namespace aRandomKiwi.MFM
                 //Patch avec SOS2: Si c'est une map spatiale SOS2 / Rimnauts 2, on prendra une autre --Par Ionfrigate12345:
                 if (HarmonyUtils.IsSOS2OrRimNauts2SpaceMap(map))
                 {
-                    map = HarmonyUtils.GetPlayerMainColonyMapSOS2Excluded();
+                    map = HarmonyUtils.GetPlayerMainColonyMap(true, false);
                 }
                 if (map == null) //Si on trouve toujours pas (le joueur n'a pas de map planétaire)
                 {

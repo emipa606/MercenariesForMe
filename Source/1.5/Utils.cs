@@ -1463,7 +1463,7 @@ namespace aRandomKiwi.MFM
                 }
             }
             return ret;*/
-            return HarmonyUtils.GetPlayerMainColonyMapSOS2Excluded();
+            return HarmonyUtils.GetPlayerMainColonyMap(true, false);
         }
 
         /*
