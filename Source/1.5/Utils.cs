@@ -313,7 +313,13 @@ namespace aRandomKiwi.MFM
             
             Pawn p = PawnGenerator.GeneratePawn(pgr);
 
-            p.ideo.SetIdeo(null); // From feedback PawnGenerator.GeneratePawn(pgr) doesnt seem to take ForceNoIdeo into account.
+            if (p == null)
+                return null;
+
+            if (ModsConfig.IdeologyActive)
+            {
+                p.ideo.SetIdeo(null); // From feedback PawnGenerator.GeneratePawn(pgr) doesnt seem to take ForceNoIdeo into account.
+            }
 
             int cAge = (int)(p.ageTracker.AgeChronologicalTicks / 3600000f);
             if (cAge < Settings.minAge || cAge >= Settings.maxAge)
@@ -321,8 +327,6 @@ namespace aRandomKiwi.MFM
                 p.ageTracker.AgeBiologicalTicks = (long)(Rand.Range(Settings.minAge, Settings.maxAge) * 3600000f);
             }
 
-            if (p == null)
-                return null;
             //p.workSettings.EnableAndInitialize();
 
             /**************************************** Traits ***************************************************/
