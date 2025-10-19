@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-	<MFM_ReturnPrisonedMercs>Mercenaires emprisonné</MFM_ReturnPrisonedMercs>
+	<MFM_ReturnPrisonedMercs>Mercenaires emprisonnés</MFM_ReturnPrisonedMercs>
 	<MFM_AddPrisonerMerc>Ajouter un mercenaire emprisonné</MFM_AddPrisonerMerc>
 	<MFM_RemovePrisonerMerc>Supprimer un prisonnier</MFM_RemovePrisonerMerc>
 	<MFM_HealthImpacted>( -{0}  santé dégradé )</MFM_HealthImpacted>
@@ -9,7 +9,6 @@
 	<MFM_BuyMerc>Acheter les mercenaires</MFM_BuyMerc>
 	
 	<MFM_SlaveMercenary>Mercenaire esclave</MFM_SlaveMercenary>
-
 	<MFM_GuardSpotDirLeft>Gauche</MFM_GuardSpotDirLeft>
 	<MFM_GuardSpotDirRight>Droite</MFM_GuardSpotDirRight>
 	<MFM_GuardSpotDirTop>Haut</MFM_GuardSpotDirTop>
@@ -20,6 +19,8 @@
 	
 	<MFM_MedievalHireRent>Recruter/Louer</MFM_MedievalHireRent>
 	<MFM_MedievalHireRentDesc>Recruter ou lour des mercenaires avec L'Alliance du fer</MFM_MedievalHireRentDesc>
+	
+	<MFM_DialogUnavailableOnSOS2Rimnauts2Map>(Indisponible sur les cartes spatiales SOS2 ou Rimnauts2)</MFM_DialogUnavailableOnSOS2Rimnauts2Map>
 	
 	<MFM_GuardMode>Mode guarde</MFM_GuardMode>
 	<MFM_GuardModeDesc>Permet à l'unité d'être affectée automatiquement sur des guardspot </MFM_GuardModeDesc>

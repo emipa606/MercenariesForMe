@@ -20,6 +20,8 @@
 	<MFM_MedievalHireRent>Hire/Rent</MFM_MedievalHireRent>
 	<MFM_MedievalHireRentDesc>Hire or rent mercenaries with the Iron Alliance</MFM_MedievalHireRentDesc>
 	
+	<MFM_DialogUnavailableOnSOS2Rimnauts2Map>(Unavailable on SOS2 or Rimnauts2 space maps)</MFM_DialogUnavailableOnSOS2Rimnauts2Map>
+	
 	<MFM_GuardMode>Guard Mode</MFM_GuardMode>
 	<MFM_GuardModeDesc>Allows the unit to be assigned automatically on guardspot</MFM_GuardModeDesc>
 
