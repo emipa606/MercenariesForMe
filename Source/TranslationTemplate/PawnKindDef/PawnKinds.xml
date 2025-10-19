@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Bow-man -->
+  <MFM_IronAllianceBowman.label>Bow-man</MFM_IronAllianceBowman.label>
+  <!-- EN: elite bow-man -->
+  <MFM_IronAllianceEliteBowman.label>elite bow-man</MFM_IronAllianceEliteBowman.label>
+  <!-- EN: elite guard -->
+  <MFM_IronAllianceEliteGuard.label>elite guard</MFM_IronAllianceEliteGuard.label>
+  <!-- EN: town guard -->
+  <MFM_IronAllianceGuard.label>town guard</MFM_IronAllianceGuard.label>
+  <!-- EN: knight -->
+  <MFM_IronAllianceKnight.label>knight</MFM_IronAllianceKnight.label>
+  <!-- EN: lord -->
+  <MFM_IronAllianceLord.label>lord</MFM_IronAllianceLord.label>
+  <!-- EN: lords -->
+  <MFM_IronAllianceLord.labelPlural>lords</MFM_IronAllianceLord.labelPlural>
+  <!-- EN: town trader -->
+  <MFM_IronAllianceTrader.label>town trader</MFM_IronAllianceTrader.label>
+  <!-- EN: villager -->
+  <MFM_IronAllianceVillager.label>villager</MFM_IronAllianceVillager.label>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: USFM Discount -->
+  <MFM_MercDiscount.label>USFM Discount</MFM_MercDiscount.label>
+  <!-- EN: Mercenary want join -->
+  <MFM_MercWantJoin.label>Mercenary want join</MFM_MercWantJoin.label>
+  <!-- EN: Mercenaries Raid -->
+  <MFM_Raid.label>Mercenaries Raid</MFM_Raid.label>
+  <!-- EN: Counter offer -->
+  <MFM_RentedMercCounterOffer.label>Counter offer</MFM_RentedMercCounterOffer.label>
+  <!-- EN: Death of a mercenary -->
+  <MFM_RentedMercDeath.label>Death of a mercenary</MFM_RentedMercDeath.label>
+  <!-- EN: Mission loot -->
+  <MFM_RentedMercEarnMoney.label>Mission loot</MFM_RentedMercEarnMoney.label>
+  <!-- EN: Mercenary fired -->
+  <MFM_RentedMercFired.label>Mercenary fired</MFM_RentedMercFired.label>
+  <!-- EN: Injured Rented mercenary -->
+  <MFM_RentedMercInjured.label>Injured Rented mercenary</MFM_RentedMercInjured.label>
+  <!-- EN: Mercenary slave escape -->
+  <MFM_RentedSlaveMercEscape.label>Mercenary slave escape</MFM_RentedSlaveMercEscape.label>
+  <!-- EN: Mercenary slave faction relation degration -->
+  <MFM_RentedSlaveMercFactionRelationDecrease.label>Mercenary slave faction relation degration</MFM_RentedSlaveMercFactionRelationDecrease.label>
+</LanguageData>

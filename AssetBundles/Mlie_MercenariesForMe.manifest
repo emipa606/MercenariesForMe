@@ -1,0 +1,111 @@
+ManifestFileVersion: 0
+CRC: 594492031
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8b27127f650e894eeeedacc19b7db66f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8b27127f650e894eeeedacc19b7db66f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/DispatcherMedieval.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/BannerMedieval/CentralHubHire.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/BannerMedieval/Summary.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/Summary.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Thin_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Update.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Farmer.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Ranged.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Hulk_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Dispatcher.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Fat_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Level.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatCurrentOrders.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/CentralHubHire.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Hulk_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatMiner.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatRecall.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_HireRent.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Male_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Male_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Hulk_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Melee.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Thin_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_IronAllianceC.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_BeamTarget.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Male_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Thin_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatGears.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Guardian.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_IronAllianceTrader.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Female_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatSoldier2.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Fat_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Tech.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Thin_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Fat_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatSpeak.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/World/PlaceOfPayment2.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/QuadrumBill.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Fired.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatTrainer.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_IronAlliance.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatArtist.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatShipping.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/RestitutionOfPrisoners.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Fat_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatScientist.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/World/USFMR.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatBuilder.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Female_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatRent.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Thin_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Hulk_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/World/PlaceOfPayment.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Male_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/CentralHubRent.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Male_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatFarmer.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/BannerMedieval/RestitutionOfPrisoners.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Cooker.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Female_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatMedical.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Trainer.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Female_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Fat_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Banner/CentralHub.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Builder.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatTech.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Hulk_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatWeapons.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatSoldier.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Miner.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Speak.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Medical.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Thin_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Fat_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_GuardMode.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_LevelCyborg.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatStuffAndGuarantee.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Female_east.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatCooker.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Scientist.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/Cats/CatPreferences.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirtCivil_Female_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Male_north.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/MFM_Artist.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/BannerMedieval/CentralHubRent.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/UI/BannerMedieval/QuadrumBill.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/Apparel/USFMBasicShirt_Hulk_south.png
+- Assets/Data/Mlie.MercenariesForMe/Textures/World/USFM.png
+Dependencies: []

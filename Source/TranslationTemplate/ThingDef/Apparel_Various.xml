@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: USFM T-shirt -->
+  <MFM_Apparel_USFMBasicShirt.label>USFM T-shirt</MFM_Apparel_USFMBasicShirt.label>
+  <!-- EN: A simple USFM T-shirt. -->
+  <MFM_Apparel_USFMBasicShirt.description>A simple USFM T-shirt.</MFM_Apparel_USFMBasicShirt.description>
+  <!-- EN: USFM Civil T-shirt -->
+  <MFM_Apparel_USFMBasicShirtCivil.label>USFM Civil T-shirt</MFM_Apparel_USFMBasicShirtCivil.label>
+  <!-- EN: A simple USFM civil T-shirt. -->
+  <MFM_Apparel_USFMBasicShirtCivil.description>A simple USFM civil T-shirt.</MFM_Apparel_USFMBasicShirtCivil.description>
+</LanguageData>

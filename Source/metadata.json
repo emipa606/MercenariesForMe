@@ -1,0 +1,18 @@
+{
+  "Continued": true,
+  "CanAdd": "2",
+  "CanRemove": "2",
+  "LastXmlCleaning": "2025-10-19T21:54:00.5032681+02:00",
+  "SocialImageSet": true,
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 387274,
+  "LinesOfXML": 25171,
+  "SearchTags": [
+    " payment",
+    " guards",
+    " workers"
+  ],
+  "PreviewVersion": "1.6"
+}

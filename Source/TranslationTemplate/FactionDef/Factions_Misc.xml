@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Iron Alliance (USFM) -->
+  <USFM_FactionAOS.label>Iron Alliance (USFM)</USFM_FactionAOS.label>
+  <!-- EN: The Iron Alliance is a medieval mercenary company that is part of the USFM conglomerate and present on your rimworld -->
+  <USFM_FactionAOS.description>The Iron Alliance is a medieval mercenary company that is part of the USFM conglomerate and present on your rimworld</USFM_FactionAOS.description>
+  <!-- EN: Iron Alliance (USFM) -->
+  <USFM_FactionAOS.fixedName>Iron Alliance (USFM)</USFM_FactionAOS.fixedName>
+  <!-- EN: leader -->
+  <USFM_FactionAOS.leaderTitle>leader</USFM_FactionAOS.leaderTitle>
+  <!-- EN: mercenary -->
+  <USFM_FactionAOS.pawnSingular>mercenary</USFM_FactionAOS.pawnSingular>
+  <!-- EN: mercenaries -->
+  <USFM_FactionAOS.pawnsPlural>mercenaries</USFM_FactionAOS.pawnsPlural>
+  <!-- EN: USFM -->
+  <USFM_FactionUSMC.label>USFM</USFM_FactionUSMC.label>
+  <!-- EN: United Space Force Mercenaries (USFM) -->
+  <USFM_FactionUSMC.description>United Space Force Mercenaries (USFM)</USFM_FactionUSMC.description>
+  <!-- EN: United Space Force Mercenaries -->
+  <USFM_FactionUSMC.fixedName>United Space Force Mercenaries</USFM_FactionUSMC.fixedName>
+  <!-- EN: leader -->
+  <USFM_FactionUSMC.leaderTitle>leader</USFM_FactionUSMC.leaderTitle>
+  <!-- EN: mercenary -->
+  <USFM_FactionUSMC.pawnSingular>mercenary</USFM_FactionUSMC.pawnSingular>
+  <!-- EN: mercenaries -->
+  <USFM_FactionUSMC.pawnsPlural>mercenaries</USFM_FactionUSMC.pawnsPlural>
+</LanguageData>

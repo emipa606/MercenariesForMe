@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="MercenariesForMe/MercenariesForMe.csproj" Type="dac04ec4-3015-91d3-cf4b-00c04f79efbc" />
+</Solution>
