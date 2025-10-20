@@ -112,11 +112,6 @@ When you hire or rent mercenaries, you create a contract between you and the USF
 
 When the contract does not begin exactly at the quadrum start, a prorata is applied to the price so that you only pay from the moment the contract started, so for example if the contract start the day 6 of the current quadrum, you will pay only from 6 to 15 so 9 days not 15 days.
 
-[img]https://i.postimg.cc/y6g90jxF/VbUNpWT.png[/img]
-
-Bionic parts for cyborg mercenaries :
-[lis
-
 [img]https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png[/img]
 [list]
 [*] See if the error persists if you just have this mod and its requirements active.
@@ -126,6 +121,8 @@ Bionic parts for cyborg mercenaries :
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.1</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3590126230][img]https://img.shields.io/github/v/release/emipa606/MercenariesForMe?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  payment,  guards,  workers</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
 </ModMetaData>

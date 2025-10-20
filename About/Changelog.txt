@@ -1,5 +1,8 @@
 # Changelog for MercenariesForMe
 
+1.6.2 - Fixed typo
+
+
 1.6.1 - Updated for 1.6
 Used DeepL to update translations for ChineseSimplified, French, German
 

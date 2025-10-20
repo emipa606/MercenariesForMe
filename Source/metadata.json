@@ -2,17 +2,18 @@
   "Continued": true,
   "CanAdd": "2",
   "CanRemove": "2",
-  "LastXmlCleaning": "2025-10-19T21:54:00.5032681+02:00",
+  "LastXmlCleaning": "2025-10-20T20:25:36.0941582+02:00",
   "SocialImageSet": true,
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
   "LinesOfCode": 387274,
-  "LinesOfXML": 25171,
+  "LinesOfXML": 25460,
   "SearchTags": [
     " payment",
     " guards",
     " workers"
   ],
-  "PreviewVersion": "1.6"
+  "PreviewVersion": "1.6",
+  "RimWorldBaseId": 22946
 }
