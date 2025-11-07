@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace aRandomKiwi.MFM;
@@ -6,6 +9,17 @@ namespace aRandomKiwi.MFM;
 [StaticConstructorOnStartup]
 internal static class Tex
 {
+    public static List<PawnKindDef> AvailablePawnKinds;
+
+    public static List<TraitDef> AvailableTraits;
+
+    public static List<HediffDef> AvailableHediffs;
+
+    public static List<ThingDef> AvailableWeapons;
+
+    public static List<string> AvailableTraitDegrees;
+
+
     public static readonly Material artist = MaterialPool.MatFrom("UI/MFM_Artist", ShaderDatabase.MetaOverlay);
     public static readonly Material builder = MaterialPool.MatFrom("UI/MFM_Builder", ShaderDatabase.MetaOverlay);
     public static readonly Material cooker = MaterialPool.MatFrom("UI/MFM_Cooker", ShaderDatabase.MetaOverlay);
@@ -94,5 +108,22 @@ internal static class Tex
 
     static Tex()
     {
+        AvailablePawnKinds = DefDatabase<PawnKindDef>.AllDefsListForReading
+            .OrderBy(def => def.label)
+            .ToList();
+        AvailableTraits = DefDatabase<TraitDef>.AllDefsListForReading
+            .OrderBy(def => def.label)
+            .ToList();
+        AvailableHediffs = DefDatabase<HediffDef>.AllDefsListForReading
+            .OrderBy(def => def.label)
+            .ToList();
+        AvailableWeapons = DefDatabase<ThingDef>.AllDefsListForReading
+            .Where(thingDef => thingDef.IsWeapon)
+            .OrderBy(def => def.label)
+            .ToList();
+        AvailableTraitDegrees = DefDatabase<TraitDef>.AllDefsListForReading
+            .SelectMany(def => def.degreeDatas.Select(degree => degree.label))
+            .OrderBy(label => label)
+            .ToList();
     }
 }

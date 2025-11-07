@@ -2,12 +2,12 @@
   "Continued": true,
   "CanAdd": "2",
   "CanRemove": "2",
-  "LastXmlCleaning": "2025-10-20T20:25:36.0941582+02:00",
+  "LastXmlCleaning": "2025-11-07T23:08:12.7465968+01:00",
   "SocialImageSet": true,
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 387274,
+  "LinesOfCode": 390853,
   "LinesOfXML": 25460,
   "SearchTags": [
     " payment",
@@ -15,5 +15,6 @@
     " workers"
   ],
   "PreviewVersion": "1.6",
-  "RimWorldBaseId": 22946
+  "RimWorldBaseId": 22946,
+  "CodeBaseSize": 88
 }

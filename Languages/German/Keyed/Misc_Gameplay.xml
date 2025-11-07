@@ -201,7 +201,7 @@
   <MFM_QuadBillTotalSummarize>Insgesamt pro Quadrum : {0}</MFM_QuadBillTotalSummarize>
   <MFM_QuadBillCountRentedMerc>Gemietete Söldner : {0}</MFM_QuadBillCountRentedMerc>
   <MFM_QuadBillCountHiredMerc>Angeheuerte Söldner : {0}</MFM_QuadBillCountHiredMerc>
-  <MFM_Bill>{Rechnung</MFM_Bill>
+  <MFM_Bill>{0} Rechnung</MFM_Bill>
   <MFM_Job>Job : {0}</MFM_Job>
   <MFM_Salary>Gehalt : {0}</MFM_Salary>
   <MFM_Level>Stufe : {0}</MFM_Level>
@@ -261,7 +261,7 @@
   <MFM_SettingsTransportImmediatePrice>Sofortige Lieferung Stückpreis</MFM_SettingsTransportImmediatePrice>
   <MFM_SettingsBadMoodNbhPerQuadFloor>Anzahl der Stunden in einem Quadrum, in denen Söldner in schlechter Stimmung sind, um die monatlichen Kosten zu beeinflussen ({0}h)</MFM_SettingsBadMoodNbhPerQuadFloor>
   <MFM_SettingsGoodMoodNbhPerQuadFloor>Anzahl der Stunden in einem Quadrum, in denen die Söldner in guter Stimmung sind, um die monatlichen Kosten zu beeinflussen ({0}h)</MFM_SettingsGoodMoodNbhPerQuadFloor>
-  <MFM_SettingsBadMoodCoefIncCost>Koeffizient der Erhöhung der monatlichen Kosten im Falle der Decke der schlechten Stimmung erreicht ({0}%}</MFM_SettingsBadMoodCoefIncCost>
+  <MFM_SettingsBadMoodCoefIncCost>Koeffizient der Erhöhung der monatlichen Kosten im Falle der Decke der schlechten Stimmung erreicht ({0}%)</MFM_SettingsBadMoodCoefIncCost>
   <MFM_SettingsGoodMoodCoefDecCost>Koeffizient der Verringerung der monatlichen Kosten im Falle der Decke der schlechten Stimmung erreicht ({0}%)</MFM_SettingsGoodMoodCoefDecCost>
   <MFM_SettingsStuffAndGuaranteeDeliveryTimeMin>Mindestzeit für die Lieferung von Sachen und Garantie ({0}h)</MFM_SettingsStuffAndGuaranteeDeliveryTimeMin>
   <MFM_SettingsStuffAndGuaranteeDeliveryTimeMax>Maximale Zeit für die Lieferung von Sachen und Garantie ({0}h)</MFM_SettingsStuffAndGuaranteeDeliveryTimeMax>

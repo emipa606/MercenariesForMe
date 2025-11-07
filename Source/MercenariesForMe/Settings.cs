@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -22,7 +23,7 @@ public class Settings : ModSettings
     public static bool allowNonViolentToBeRented = true;
     public static List<string> blacklistedWeapons = [];
     public static List<string> hediffToNotClear = ["DummyPrivates", "DummyPrivatesForModdedPawnsOnBirthday"];
-    public static List<string> blacklistedPawnKind = ["M7MechPawn", "M8MechPawn", "Android5Tier"];
+    public static List<string> blacklistedPawnKind = [];
     public static int minXPRentedMercs = 600;
     public static int maxXPRentedMercs = 3000;
     public static int maxAge = 80;
@@ -675,7 +676,15 @@ public class Settings : ModSettings
         GUI.color = Color.green;
         if (list.ButtonText("+"))
         {
-            blacklistedPawnKind.Add("");
+            // Show a dropdown menu with all pawnkinds not already selected, in alphabetical order
+            var selectablePawnKinds =
+                Tex.AvailablePawnKinds.Where(pawnKind => !blacklistedPawnKind.Contains(pawnKind.defName));
+            if (selectablePawnKinds.Any())
+            {
+                // Show the dropdown menu
+                FloatMenuUtility.MakeMenu(selectablePawnKinds, pawnKindDefName => pawnKindDefName.label,
+                    pawnKindDefName => delegate { blacklistedPawnKind.Add(pawnKindDefName.defName); });
+            }
         }
 
         GUI.color = Color.white;
@@ -718,7 +727,15 @@ public class Settings : ModSettings
         GUI.color = Color.green;
         if (list.ButtonText("+"))
         {
-            blacklistedTraitsV2.Add("");
+            // Show a dropdown menu with all traits not already selected, in alphabetical order
+            var selectableTraits =
+                Tex.AvailableTraits.Where(trait => !blacklistedTraitsV2.Contains(trait.defName));
+            if (selectableTraits.Any())
+            {
+                // Show the dropdown menu
+                FloatMenuUtility.MakeMenu(selectableTraits, traitDefName => traitDefName.label,
+                    traitDefName => delegate { blacklistedTraitsV2.Add(traitDefName.defName); });
+            }
         }
 
         GUI.color = Color.white;
@@ -764,7 +781,14 @@ public class Settings : ModSettings
         GUI.color = Color.green;
         if (list.ButtonText("+"))
         {
-            hediffToNotClear.Add("");
+            // Show a dropdown menu with all hediffs not already selected, in alphabetical order
+            var selectableHediffs =
+                Tex.AvailableHediffs.Where(hediff => !hediffToNotClear.Contains(hediff.defName));
+            if (selectableHediffs.Any())
+            {
+                FloatMenuUtility.MakeMenu(selectableHediffs, hediffDefName => hediffDefName.label,
+                    hediffDefName => delegate { hediffToNotClear.Add(hediffDefName.defName); });
+            }
         }
 
         GUI.color = Color.white;
@@ -788,7 +812,7 @@ public class Settings : ModSettings
         }
 
         list.Gap(10f);
-        if (list.ButtonText("MFM_SettingsResetBlacklistedTraits".Translate()))
+        if (list.ButtonText("MFM_SettingsResetHediffToKeepOnMercGen".Translate()))
         {
             resetHediffToNotClear();
         }
@@ -810,7 +834,14 @@ public class Settings : ModSettings
         GUI.color = Color.green;
         if (list.ButtonText("+"))
         {
-            blacklistedWeapons.Add("");
+            // Show a dropdown menu with all weapons not already selected, in alphabetical order
+            var selectableWeapons =
+                Tex.AvailableWeapons.Where(weapon => !blacklistedWeapons.Contains(weapon.defName));
+            if (selectableWeapons.Any())
+            {
+                FloatMenuUtility.MakeMenu(selectableWeapons, weaponDefName => weaponDefName.label,
+                    weaponDefName => delegate { blacklistedWeapons.Add(weaponDefName.defName); });
+            }
         }
 
         GUI.color = Color.white;
@@ -856,7 +887,18 @@ public class Settings : ModSettings
         GUI.color = Color.green;
         if (list.ButtonText("+"))
         {
-            mustHaveTraits.Add("");
+            // Show a dropdown menu with all trait-degrees not already selected, in alphabetical order
+            var selectableTraitsDegrees =
+                Tex.AvailableTraitDegrees.Where(trait => !mustHaveTraits.Contains(trait));
+            if (selectableTraitsDegrees.Any())
+            {
+                FloatMenuUtility.MakeMenu(selectableTraitsDegrees, traitDefName => traitDefName,
+                    traitDefName => delegate { mustHaveTraits.Add(traitDefName); });
+            }
+            else
+            {
+                Log.Message("No traits");
+            }
         }
 
         GUI.color = Color.white;
@@ -1087,7 +1129,7 @@ public class Settings : ModSettings
 
     private static void resetBlacklistedPawnKind()
     {
-        blacklistedPawnKind = ["M7MechPawn", "Android5Tier"];
+        blacklistedPawnKind = [];
     }
 
     private static void resetBlacklistedTraits()

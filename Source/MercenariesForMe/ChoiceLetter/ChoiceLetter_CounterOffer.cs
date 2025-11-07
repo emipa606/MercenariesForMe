@@ -113,7 +113,7 @@ public class ChoiceLetter_CounterOffer : ChoiceLetter_UnRemovable
                             entry.jobs.StopAll();
                             entry.jobs.ClearQueuedJobs();
                             entry.ClearAllReservations();
-                            entry.ClearMind();
+                            entry.ClearMind_NewTemp();
                             entry.SetFaction(faction);
 
                             if (!lords.ContainsKey(entry.Map))

@@ -211,8 +211,8 @@
   <MFM_AffinityNeutral>Neutral</MFM_AffinityNeutral>
   <MFM_AffinityBad>Bad</MFM_AffinityBad>
   <!-- Settings -->
-  <MFM_SettingsResetBlacklistedTraits>Reset Blacklisted Rraits</MFM_SettingsResetBlacklistedTraits>
-  <MFM_SettingsResetBlacklistedPawnKind>Reset Blacklisted pawnKinds</MFM_SettingsResetBlacklistedPawnKind>
+  <MFM_SettingsResetBlacklistedTraits>Reset Blacklisted Traits</MFM_SettingsResetBlacklistedTraits>
+  <MFM_SettingsResetBlacklistedPawnKind>Reset Blacklisted PawnKinds</MFM_SettingsResetBlacklistedPawnKind>
   <MFM_SettingsResetHediffToKeepOnMercGen>Reset hediff defName To Keep</MFM_SettingsResetHediffToKeepOnMercGen>
   <MFM_SettingsResetBlacklistedWeapons>Reset Blacklisted weapons</MFM_SettingsResetBlacklistedWeapons>
   <MFM_SettingsResetMustHaveTraits>Reset must have traits</MFM_SettingsResetMustHaveTraits>

@@ -16,7 +16,6 @@ internal class MercenariesForMe : Mod
     private const string ID_MEDIEVAL_TIMES = "Medieval Times";
     private const string ID_GUARDS_FOR_ME = "Guards For Me";
 
-
     public MercenariesForMe(ModContentPack content) : base(content)
     {
         //Log.Message("Init MFM");
